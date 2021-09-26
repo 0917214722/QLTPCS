@@ -1,0 +1,14 @@
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\bin\Debug\QLTPCS.exe.config
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\bin\Debug\QLTPCS.exe
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\bin\Debug\QLTPCS.pdb
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.csprojAssemblyReference.cache
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_login.resources
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.Properties.Resources.resources
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.csproj.GenerateResource.cache
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.csproj.CoreCompileInputs.cache
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.exe
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.pdb
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_signup.resources
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_main.resources
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_nhanVien.resources
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_khachHang.resources
