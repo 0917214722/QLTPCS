@@ -49,6 +49,7 @@
     <Compile Include="entity\DiemDanh.cs" />
     <Compile Include="entity\KhachHang.cs" />
     <Compile Include="entity\NhanVien.cs" />
+    <Compile Include="entity\tkdd.cs" />
     <Compile Include="frm_diemDanh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +86,12 @@
     <Compile Include="frm_signup.Designer.cs">
       <DependentUpon>frm_signup.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_tkDiemDanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tkDiemDanh.Designer.cs">
+      <DependentUpon>frm_tkDiemDanh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_diemDanh.resx">
@@ -104,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_signup.resx">
       <DependentUpon>frm_signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tkDiemDanh.resx">
+      <DependentUpon>frm_tkDiemDanh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

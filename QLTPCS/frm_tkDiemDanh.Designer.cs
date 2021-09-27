@@ -29,22 +29,25 @@ namespace QLTPCS
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_tkdd = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_thang = new System.Windows.Forms.TextBox();
             this.txt_nam = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_thongKe = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_tkdd)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgv_tkdd
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(1, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(798, 275);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv_tkdd.AllowUserToAddRows = false;
+            this.dgv_tkdd.AllowUserToDeleteRows = false;
+            this.dgv_tkdd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_tkdd.Location = new System.Drawing.Point(1, 2);
+            this.dgv_tkdd.Name = "dgv_tkdd";
+            this.dgv_tkdd.ReadOnly = true;
+            this.dgv_tkdd.Size = new System.Drawing.Size(798, 275);
+            this.dgv_tkdd.TabIndex = 0;
             // 
             // label1
             // 
@@ -80,12 +83,13 @@ namespace QLTPCS
             // 
             // btn_thongKe
             // 
-            this.btn_thongKe.Location = new System.Drawing.Point(174, 367);
+            this.btn_thongKe.Location = new System.Drawing.Point(159, 367);
             this.btn_thongKe.Name = "btn_thongKe";
             this.btn_thongKe.Size = new System.Drawing.Size(75, 23);
             this.btn_thongKe.TabIndex = 5;
             this.btn_thongKe.Text = "Thống kê";
             this.btn_thongKe.UseVisualStyleBackColor = true;
+            this.btn_thongKe.Click += new System.EventHandler(this.btn_thongKe_Click);
             // 
             // frm_tkDiemDanh
             // 
@@ -97,10 +101,11 @@ namespace QLTPCS
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_thang);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_tkdd);
             this.Name = "frm_tkDiemDanh";
             this.Text = "frm_tkDiemDanh";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frm_tkDiemDanh_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_tkdd)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,7 +113,7 @@ namespace QLTPCS
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_tkdd;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_thang;
         private System.Windows.Forms.TextBox txt_nam;
