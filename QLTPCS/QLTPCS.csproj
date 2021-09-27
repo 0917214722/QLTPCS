@@ -46,8 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="entity\DiemDanh.cs" />
     <Compile Include="entity\KhachHang.cs" />
     <Compile Include="entity\NhanVien.cs" />
+    <Compile Include="frm_diemDanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_diemDanh.Designer.cs">
+      <DependentUpon>frm_diemDanh.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_khachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +87,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_diemDanh.resx">
+      <DependentUpon>frm_diemDanh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_khachHang.resx">
       <DependentUpon>frm_khachHang.cs</DependentUpon>
     </EmbeddedResource>

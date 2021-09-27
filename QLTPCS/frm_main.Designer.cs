@@ -33,6 +33,7 @@ namespace QLTPCS
             this.nhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.điểmDanhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thốngKêĐiểmDanhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,8 @@ namespace QLTPCS
             // nhânViênToolStripMenuItem
             // 
             this.nhânViênToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.điểmDanhToolStripMenuItem});
+            this.điểmDanhToolStripMenuItem,
+            this.thốngKêĐiểmDanhToolStripMenuItem});
             this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
             this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.nhânViênToolStripMenuItem.Text = "Nhân viên";
@@ -59,7 +61,7 @@ namespace QLTPCS
             // điểmDanhToolStripMenuItem
             // 
             this.điểmDanhToolStripMenuItem.Name = "điểmDanhToolStripMenuItem";
-            this.điểmDanhToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.điểmDanhToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.điểmDanhToolStripMenuItem.Text = "Điểm danh";
             this.điểmDanhToolStripMenuItem.Click += new System.EventHandler(this.điểmDanhToolStripMenuItem_Click);
             // 
@@ -69,6 +71,13 @@ namespace QLTPCS
             this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.kháchHàngToolStripMenuItem.Text = "Khách hàng";
             this.kháchHàngToolStripMenuItem.Click += new System.EventHandler(this.kháchHàngToolStripMenuItem_Click);
+            // 
+            // thốngKêĐiểmDanhToolStripMenuItem
+            // 
+            this.thốngKêĐiểmDanhToolStripMenuItem.Name = "thốngKêĐiểmDanhToolStripMenuItem";
+            this.thốngKêĐiểmDanhToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.thốngKêĐiểmDanhToolStripMenuItem.Text = "Thống kê điểm danh";
+            this.thốngKêĐiểmDanhToolStripMenuItem.Click += new System.EventHandler(this.thốngKêĐiểmDanhToolStripMenuItem_Click);
             // 
             // frm_main
             // 
@@ -93,5 +102,6 @@ namespace QLTPCS
         private System.Windows.Forms.ToolStripMenuItem nhânViênToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem điểmDanhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kháchHàngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thốngKêĐiểmDanhToolStripMenuItem;
     }
 }

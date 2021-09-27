@@ -64,7 +64,7 @@ namespace QLTPCS
             }   
             catch(Exception ex)
             {
-                //Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.Message);
                 checkSignup();
                 //checkTextFields();
                 MessageBox.Show("Đăng kí thất bại. Vui lòng thử lại !!!");
