@@ -13,3 +13,4 @@ D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_main.resources
 D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_nhanVien.resources
 D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_khachHang.resources
 D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_diemDanh.resources
+D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_tkDiemDanh.resources

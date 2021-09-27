@@ -29,11 +29,13 @@ namespace QLTPCS
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.nhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.điểmDanhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêĐiểmDanhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +67,13 @@ namespace QLTPCS
             this.điểmDanhToolStripMenuItem.Text = "Điểm danh";
             this.điểmDanhToolStripMenuItem.Click += new System.EventHandler(this.điểmDanhToolStripMenuItem_Click);
             // 
+            // thốngKêĐiểmDanhToolStripMenuItem
+            // 
+            this.thốngKêĐiểmDanhToolStripMenuItem.Name = "thốngKêĐiểmDanhToolStripMenuItem";
+            this.thốngKêĐiểmDanhToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.thốngKêĐiểmDanhToolStripMenuItem.Text = "Thống kê điểm danh";
+            this.thốngKêĐiểmDanhToolStripMenuItem.Click += new System.EventHandler(this.thốngKêĐiểmDanhToolStripMenuItem_Click);
+            // 
             // kháchHàngToolStripMenuItem
             // 
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
@@ -72,12 +81,10 @@ namespace QLTPCS
             this.kháchHàngToolStripMenuItem.Text = "Khách hàng";
             this.kháchHàngToolStripMenuItem.Click += new System.EventHandler(this.kháchHàngToolStripMenuItem_Click);
             // 
-            // thốngKêĐiểmDanhToolStripMenuItem
+            // contextMenuStrip1
             // 
-            this.thốngKêĐiểmDanhToolStripMenuItem.Name = "thốngKêĐiểmDanhToolStripMenuItem";
-            this.thốngKêĐiểmDanhToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.thốngKêĐiểmDanhToolStripMenuItem.Text = "Thống kê điểm danh";
-            this.thốngKêĐiểmDanhToolStripMenuItem.Click += new System.EventHandler(this.thốngKêĐiểmDanhToolStripMenuItem_Click);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // frm_main
             // 
@@ -103,5 +110,6 @@ namespace QLTPCS
         private System.Windows.Forms.ToolStripMenuItem điểmDanhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kháchHàngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thốngKêĐiểmDanhToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

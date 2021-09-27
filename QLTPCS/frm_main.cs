@@ -35,13 +35,14 @@ namespace QLTPCS
         private void điểmDanhToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_diemDanh frm_DiemDanh = new frm_diemDanh();
-            
+            frm_DiemDanh.MdiParent = this;
             frm_DiemDanh.Show();
         }
 
         private void thốngKêĐiểmDanhToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_tkDiemDanh frm_tkdd = new frm_tkDiemDanh();
+            frm_tkdd.MdiParent = this;
             frm_tkdd.Show();
         }
     }
