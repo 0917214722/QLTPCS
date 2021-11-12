@@ -16,18 +16,27 @@ namespace QLTPCS
         {
             InitializeComponent();
         }
-        /*
-        private void checkTextFields()
-        {
-            string tk = txt_tenDangNhap.Text;
-            string mk = txt_matKhau.Text;
-            if (tk == "" || mk == "")
+        
+        private bool checkTextFields()
+        {  
+            if (txt_matKhau.Text == "" && txt_tenDangNhap.Text == "")
             {
-                lb_tenDangNhap.Text = "Nhập tên đăng nhập !";
-                lb_matKhau.Text = "Nhập mật khẩu !";
+                MessageBox.Show("Chưa nhập tài khoản và mật khẩu");
+                return false;
             }
+            else if (txt_matKhau.Text == "")
+            {
+                MessageBox.Show("Chưa nhập mật khẩu");
+                return false;
+            }
+            else if (txt_tenDangNhap.Text == "")
+            {
+                MessageBox.Show("Chưa nhập tài khoản ");
+                return false;
+            }
+            return true;
         }
-        */
+        
         private void checkSignup()
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
@@ -50,19 +59,23 @@ namespace QLTPCS
         }
         private void btn_dangKi_Click(object sender, EventArgs e)
         {
-            try { 
+            try {
+                
                 SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "insert into TaiKhoan values (@tk, @mk)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.Add(new SqlParameter("@tk", txt_tenDangNhap.Text));
                 cmd.Parameters.Add(new SqlParameter("@mk", txt_matKhau.Text));
-                cmd.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show("Đăng kí thành công !!!");
-                
-            }   
-            catch(Exception ex)
+                if (checkTextFields())
+                {
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("Đăng kí thành công !!!");
+                }
+               
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 checkSignup();

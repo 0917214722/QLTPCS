@@ -84,23 +84,29 @@ namespace QLTPCS
         }
         private void dgv_nhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int idx = e.RowIndex;
-            btn_them.Enabled = false;
-            txt_maNhanVien.Enabled = false;
-            txt_maNhanVien.Text = dgv_nhanVien.Rows[idx].Cells["MaNhanVien"].Value.ToString();
-            txt_tenNhanVien.Text = dgv_nhanVien.Rows[idx].Cells["TenNhanVien"].Value.ToString();
-            txt_ngaySinh.Text = dgv_nhanVien.Rows[idx].Cells["NgaySinh"].Value.ToString();
-            txt_ngayVaolam.Text = dgv_nhanVien.Rows[idx].Cells["NgayVaoLam"].Value.ToString();
-            txt_diaChi.Text = dgv_nhanVien.Rows[idx].Cells["DiaChi"].Value.ToString();
-            txt_dienThoai.Text = dgv_nhanVien.Rows[idx].Cells["Sdt"].Value.ToString();
-            string check = dgv_nhanVien.Rows[idx].Cells["GioiTinh"].Value.ToString();
-            if (check == "Nam" || check == "nam")
-            {
-                rd_nam.Checked = true;
+            try { 
+                int idx = e.RowIndex;
+                btn_them.Enabled = false;
+                txt_maNhanVien.Enabled = false;
+                txt_maNhanVien.Text = dgv_nhanVien.Rows[idx].Cells["MaNhanVien"].Value.ToString();
+                txt_tenNhanVien.Text = dgv_nhanVien.Rows[idx].Cells["TenNhanVien"].Value.ToString();
+                txt_ngaySinh.Text = dgv_nhanVien.Rows[idx].Cells["NgaySinh"].Value.ToString();
+                txt_ngayVaolam.Text = dgv_nhanVien.Rows[idx].Cells["NgayVaoLam"].Value.ToString();
+                txt_diaChi.Text = dgv_nhanVien.Rows[idx].Cells["DiaChi"].Value.ToString();
+                txt_dienThoai.Text = dgv_nhanVien.Rows[idx].Cells["Sdt"].Value.ToString();
+                string check = dgv_nhanVien.Rows[idx].Cells["GioiTinh"].Value.ToString();
+                if (check == "Nam" || check == "nam")
+                {
+                    rd_nam.Checked = true;
+                }
+                else if (check == "Nu" || check == "nu")
+                {
+                    rd_nu.Checked = true;
+                }
             }
-            else if (check == "Nu" || check == "nu")
+            catch
             {
-                rd_nu.Checked = true;
+
             }
 
         }
