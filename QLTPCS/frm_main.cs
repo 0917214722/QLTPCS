@@ -45,5 +45,33 @@ namespace QLTPCS
             frm_tkdd.MdiParent = this;
             frm_tkdd.Show();
         }
+
+        private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_sanPham frm_tkdd = new frm_sanPham();
+            frm_tkdd.MdiParent = this;
+            frm_tkdd.Show();
+        }
+
+        private void loạiSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_loaiSanPham frm_tkdd = new frm_loaiSanPham();
+            frm_tkdd.MdiParent = this;
+            frm_tkdd.Show();
+        }
+
+        private void nhàPhânPhốiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_nhaPhanPhoi frm_tkdd = new frm_nhaPhanPhoi();
+            frm_tkdd.MdiParent = this;
+            frm_tkdd.Show();
+        }
+
+        private void phếuNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_phieuNhap frm_tkdd = new frm_phieuNhap();
+            frm_tkdd.MdiParent = this;
+            frm_tkdd.Show();
+        }
     }
 }

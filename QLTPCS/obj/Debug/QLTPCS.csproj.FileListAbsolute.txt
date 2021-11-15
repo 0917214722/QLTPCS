@@ -14,3 +14,23 @@ D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_nhanVien.resour
 D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_khachHang.resources
 D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_diemDanh.resources
 D:\ki1-nam3\Đồ Án C#\CODE\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_tkDiemDanh.resources
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\bin\Debug\QLTPCS.exe.config
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\bin\Debug\QLTPCS.exe
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\bin\Debug\QLTPCS.pdb
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_diemDanh.resources
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_khachHang.resources
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_login.resources
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_main.resources
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_nhanVien.resources
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_signup.resources
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_tkDiemDanh.resources
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.exe
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.pdb
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_sanPham.resources
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_loaiSanPham.resources
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_nhaPhanPhoi.resources
+C:\Users\ADMIN\Desktop\QLTPCS\QLTPCS\obj\Debug\QLTPCS.frm_phieuNhap.resources

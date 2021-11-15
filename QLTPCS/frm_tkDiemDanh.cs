@@ -23,7 +23,7 @@ namespace QLTPCS
             try
             {
                 List<tkdd> lst_diemDanh = new List<tkdd>();
-                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
+                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
                 conn.Open();
                 string query = "select TenNhanVien, count (MaNhanVien) as SoNgayDiLam from DiemDanh where MONTH(NgayDiLam) = @thang and YEAR(NgayDiLam) = @nam group by TenNhanVien";
                 SqlCommand cmd = new SqlCommand(query, conn);
