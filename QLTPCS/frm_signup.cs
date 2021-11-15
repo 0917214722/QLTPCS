@@ -39,7 +39,7 @@ namespace QLTPCS
         
         private void checkSignup()
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
+            SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
             conn.Open();
             string query = "select count (*) from TaiKhoan where TenDangNhap = @tk";
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -60,8 +60,8 @@ namespace QLTPCS
         private void btn_dangKi_Click(object sender, EventArgs e)
         {
             try {
-                
-                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
+
+                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
                 conn.Open();
                 string query = "insert into TaiKhoan values (@tk, @mk)";
                 SqlCommand cmd = new SqlCommand(query, conn);

@@ -46,9 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="entity\ChiTietPhieuNhap.cs" />
     <Compile Include="entity\DiemDanh.cs" />
     <Compile Include="entity\KhachHang.cs" />
+    <Compile Include="entity\LoaiSanPham.cs" />
     <Compile Include="entity\NhanVien.cs" />
+    <Compile Include="entity\NhaPhanPhoi.cs" />
+    <Compile Include="entity\PhieuNhap.cs" />
+    <Compile Include="entity\SanPham.cs" />
+    <Compile Include="entity\SanPham_LoaiSanPham.cs" />
     <Compile Include="entity\tkdd.cs" />
     <Compile Include="frm_diemDanh.cs">
       <SubType>Form</SubType>
@@ -61,6 +67,12 @@
     </Compile>
     <Compile Include="frm_khachHang.Designer.cs">
       <DependentUpon>frm_khachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_loaiSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_loaiSanPham.Designer.cs">
+      <DependentUpon>frm_loaiSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_login.cs">
       <SubType>Form</SubType>
@@ -79,6 +91,24 @@
     </Compile>
     <Compile Include="frm_nhanVien.Designer.cs">
       <DependentUpon>frm_nhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_nhaPhanPhoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_nhaPhanPhoi.Designer.cs">
+      <DependentUpon>frm_nhaPhanPhoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_phieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_phieuNhap.Designer.cs">
+      <DependentUpon>frm_phieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_sanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_sanPham.Designer.cs">
+      <DependentUpon>frm_sanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_signup.cs">
       <SubType>Form</SubType>
@@ -100,6 +130,9 @@
     <EmbeddedResource Include="frm_khachHang.resx">
       <DependentUpon>frm_khachHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_loaiSanPham.resx">
+      <DependentUpon>frm_loaiSanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +141,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_nhanVien.resx">
       <DependentUpon>frm_nhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_nhaPhanPhoi.resx">
+      <DependentUpon>frm_nhaPhanPhoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_phieuNhap.resx">
+      <DependentUpon>frm_phieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_sanPham.resx">
+      <DependentUpon>frm_sanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_signup.resx">
       <DependentUpon>frm_signup.cs</DependentUpon>
