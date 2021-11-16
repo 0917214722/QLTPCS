@@ -34,7 +34,7 @@ namespace QLTPCS
         {
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 string tk = txt_tenDangNhap.Text;
                 string mk = txt_matKhau.Text;
                 conn.Open();
