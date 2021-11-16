@@ -37,7 +37,7 @@ namespace QLTPCS
             try
             {
                 List<SanPham> lst_sanPham = new List<SanPham>();
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "select * from SanPham";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -63,7 +63,7 @@ namespace QLTPCS
                 List<entity.LoaiSanPham> lst_loaiSanPham = new List<entity.LoaiSanPham>();
                 // Lấy dữ liệu Sản Phẩm từ Database về Lưu vào List
                 // Bước 1: Khởi tạo kết nối
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 // Bước 2: Mở kết nối
                 conn.Open();
                 // Bước 3: Tạo truy vấn
@@ -96,7 +96,7 @@ namespace QLTPCS
             try
             {
                 List<SanPham> lst_sanPham = new List<SanPham>();
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "select * from SanPham where TenSanPham like '%'+@tk+'%'";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -140,7 +140,7 @@ namespace QLTPCS
         {
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "insert into SanPham (MaSanPham,TenSanPham,MaLoaiSanPham,NoiSanXuat,GiaNhap,GiaBan,TonKho) values (@ma,@ten,@ma_lsp,@noiSanXuat,@giaNhap,@giaBan,@tonKho)";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -166,7 +166,7 @@ namespace QLTPCS
         {
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "update SanPham set TenSanPham = @ten, MaLoaiSanPham = @ma_lsp, NoiSanXuat = @noiSanXuat, GiaNhap = @giaNhap, GiaBan = @giaBan, tonKho = @tonKho where MaSanPham = @ma";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -192,7 +192,7 @@ namespace QLTPCS
         {
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "delete from SanPham where MaSanPham = @ma";
                 SqlCommand cmd = new SqlCommand(query, conn);
