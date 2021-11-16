@@ -17,14 +17,14 @@ namespace QLTPCS
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             
-            frm_login frm_Login = new frm_login();
-            Application.Run(frm_Login);
+            /*frm_login frm_Login = new frm_login();*/
+            /*Application.Run(frm_Login);*/
             
-            if (frm_Login.isLogin == true)
-            {
+            /*if (frm_Login.isLogin == true)
+            {*/
                 // finish thì cho dòng run form main vào đây
                 Application.Run(new frm_main());
-            }
+            /*}*/
             
             
         }

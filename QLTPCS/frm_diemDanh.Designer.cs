@@ -30,11 +30,11 @@ namespace QLTPCS
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_maNhanVien = new System.Windows.Forms.TextBox();
             this.txt_tenNhanVien = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_diemDanh = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.cmb_maNV = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -45,13 +45,6 @@ namespace QLTPCS
             this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã nhân viên:";
-            // 
-            // txt_maNhanVien
-            // 
-            this.txt_maNhanVien.Location = new System.Drawing.Point(127, 130);
-            this.txt_maNhanVien.Name = "txt_maNhanVien";
-            this.txt_maNhanVien.Size = new System.Drawing.Size(100, 20);
-            this.txt_maNhanVien.TabIndex = 1;
             // 
             // txt_tenNhanVien
             // 
@@ -90,19 +83,29 @@ namespace QLTPCS
             this.label3.Text = "Phiếu điểm danh";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // cmb_maNV
+            // 
+            this.cmb_maNV.FormattingEnabled = true;
+            this.cmb_maNV.Location = new System.Drawing.Point(128, 130);
+            this.cmb_maNV.Name = "cmb_maNV";
+            this.cmb_maNV.Size = new System.Drawing.Size(99, 21);
+            this.cmb_maNV.TabIndex = 6;
+            this.cmb_maNV.SelectedIndexChanged += new System.EventHandler(this.cmb_maNV_SelectedIndexChanged);
+            // 
             // frm_diemDanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(391, 359);
+            this.Controls.Add(this.cmb_maNV);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_diemDanh);
             this.Controls.Add(this.txt_tenNhanVien);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt_maNhanVien);
             this.Controls.Add(this.label1);
             this.Name = "frm_diemDanh";
             this.Text = "frm_diemDanh";
+            this.Load += new System.EventHandler(this.frm_diemDanh_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,10 +114,10 @@ namespace QLTPCS
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_maNhanVien;
         private System.Windows.Forms.TextBox txt_tenNhanVien;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_diemDanh;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cmb_maNV;
     }
 }
