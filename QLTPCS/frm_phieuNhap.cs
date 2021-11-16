@@ -469,5 +469,11 @@ namespace QLTPCS
         {
             findCTPhieuNhap();
         }
+
+        private void btn_report_Click(object sender, EventArgs e)
+        {
+            frm_reportPhieuNhap frm_report = new frm_reportPhieuNhap();
+            frm_report.Show();
+        }
     }
 }

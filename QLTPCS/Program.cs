@@ -26,7 +26,7 @@ namespace QLTPCS
                 Application.Run(new frm_main());
             }
             
-            
+            //Application.Run(new frm_reportPhieuNhap());
         }
     }
 }

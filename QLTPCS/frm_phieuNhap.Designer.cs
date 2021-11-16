@@ -43,12 +43,13 @@ namespace QLTPCS
             this.txt_ngayNhap = new System.Windows.Forms.TextBox();
             this.cmb_maNhaPhanPhoi = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_themPhieuNhap = new System.Windows.Forms.Button();
-            this.btn_suaPhieuNhap = new System.Windows.Forms.Button();
-            this.btn_xoaPhieuNhap = new System.Windows.Forms.Button();
-            this.btn_resetPhieuNhap = new System.Windows.Forms.Button();
             this.cmb_maNhanVien = new System.Windows.Forms.ComboBox();
+            this.btn_resetPhieuNhap = new System.Windows.Forms.Button();
+            this.btn_xoaPhieuNhap = new System.Windows.Forms.Button();
+            this.btn_suaPhieuNhap = new System.Windows.Forms.Button();
+            this.btn_themPhieuNhap = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cmb_maPhieuNhap = new System.Windows.Forms.ComboBox();
             this.btn_resetCTPhieuNhap = new System.Windows.Forms.Button();
             this.btn_xoaCTPhieuNhap = new System.Windows.Forms.Button();
             this.btn_suaCTPhieuNhap = new System.Windows.Forms.Button();
@@ -66,7 +67,7 @@ namespace QLTPCS
             this.txt_timKiemCTPhieuNhap = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.dgv_ctPhieuNhap = new System.Windows.Forms.DataGridView();
-            this.cmb_maPhieuNhap = new System.Windows.Forms.ComboBox();
+            this.btn_report = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_phieuNhap)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -80,7 +81,7 @@ namespace QLTPCS
             this.groupBox1.Controls.Add(this.txt_timKiemPhieuNhap);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.dgv_phieuNhap);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 60);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(600, 255);
             this.groupBox1.TabIndex = 2;
@@ -205,41 +206,19 @@ namespace QLTPCS
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.txt_maPhieuNhap);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(618, 12);
+            this.groupBox2.Location = new System.Drawing.Point(618, 60);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(329, 255);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             // 
-            // btn_themPhieuNhap
+            // cmb_maNhanVien
             // 
-            this.btn_themPhieuNhap.Location = new System.Drawing.Point(15, 208);
-            this.btn_themPhieuNhap.Name = "btn_themPhieuNhap";
-            this.btn_themPhieuNhap.Size = new System.Drawing.Size(55, 30);
-            this.btn_themPhieuNhap.TabIndex = 10;
-            this.btn_themPhieuNhap.Text = "Thêm";
-            this.btn_themPhieuNhap.UseVisualStyleBackColor = true;
-            this.btn_themPhieuNhap.Click += new System.EventHandler(this.btn_themPhieuNhap_Click);
-            // 
-            // btn_suaPhieuNhap
-            // 
-            this.btn_suaPhieuNhap.Location = new System.Drawing.Point(107, 208);
-            this.btn_suaPhieuNhap.Name = "btn_suaPhieuNhap";
-            this.btn_suaPhieuNhap.Size = new System.Drawing.Size(55, 30);
-            this.btn_suaPhieuNhap.TabIndex = 11;
-            this.btn_suaPhieuNhap.Text = "Sửa";
-            this.btn_suaPhieuNhap.UseVisualStyleBackColor = true;
-            this.btn_suaPhieuNhap.Click += new System.EventHandler(this.btn_suaPhieuNhap_Click);
-            // 
-            // btn_xoaPhieuNhap
-            // 
-            this.btn_xoaPhieuNhap.Location = new System.Drawing.Point(191, 207);
-            this.btn_xoaPhieuNhap.Name = "btn_xoaPhieuNhap";
-            this.btn_xoaPhieuNhap.Size = new System.Drawing.Size(55, 30);
-            this.btn_xoaPhieuNhap.TabIndex = 12;
-            this.btn_xoaPhieuNhap.Text = "Xóa";
-            this.btn_xoaPhieuNhap.UseVisualStyleBackColor = true;
-            this.btn_xoaPhieuNhap.Click += new System.EventHandler(this.btn_xoaPhieuNhap_Click);
+            this.cmb_maNhanVien.FormattingEnabled = true;
+            this.cmb_maNhanVien.Location = new System.Drawing.Point(107, 52);
+            this.cmb_maNhanVien.Name = "cmb_maNhanVien";
+            this.cmb_maNhanVien.Size = new System.Drawing.Size(151, 21);
+            this.cmb_maNhanVien.TabIndex = 3;
             // 
             // btn_resetPhieuNhap
             // 
@@ -251,13 +230,35 @@ namespace QLTPCS
             this.btn_resetPhieuNhap.UseVisualStyleBackColor = true;
             this.btn_resetPhieuNhap.Click += new System.EventHandler(this.btn_resetPhieuNhap_Click);
             // 
-            // cmb_maNhanVien
+            // btn_xoaPhieuNhap
             // 
-            this.cmb_maNhanVien.FormattingEnabled = true;
-            this.cmb_maNhanVien.Location = new System.Drawing.Point(107, 52);
-            this.cmb_maNhanVien.Name = "cmb_maNhanVien";
-            this.cmb_maNhanVien.Size = new System.Drawing.Size(151, 21);
-            this.cmb_maNhanVien.TabIndex = 3;
+            this.btn_xoaPhieuNhap.Location = new System.Drawing.Point(191, 207);
+            this.btn_xoaPhieuNhap.Name = "btn_xoaPhieuNhap";
+            this.btn_xoaPhieuNhap.Size = new System.Drawing.Size(55, 30);
+            this.btn_xoaPhieuNhap.TabIndex = 12;
+            this.btn_xoaPhieuNhap.Text = "Xóa";
+            this.btn_xoaPhieuNhap.UseVisualStyleBackColor = true;
+            this.btn_xoaPhieuNhap.Click += new System.EventHandler(this.btn_xoaPhieuNhap_Click);
+            // 
+            // btn_suaPhieuNhap
+            // 
+            this.btn_suaPhieuNhap.Location = new System.Drawing.Point(107, 208);
+            this.btn_suaPhieuNhap.Name = "btn_suaPhieuNhap";
+            this.btn_suaPhieuNhap.Size = new System.Drawing.Size(55, 30);
+            this.btn_suaPhieuNhap.TabIndex = 11;
+            this.btn_suaPhieuNhap.Text = "Sửa";
+            this.btn_suaPhieuNhap.UseVisualStyleBackColor = true;
+            this.btn_suaPhieuNhap.Click += new System.EventHandler(this.btn_suaPhieuNhap_Click);
+            // 
+            // btn_themPhieuNhap
+            // 
+            this.btn_themPhieuNhap.Location = new System.Drawing.Point(15, 208);
+            this.btn_themPhieuNhap.Name = "btn_themPhieuNhap";
+            this.btn_themPhieuNhap.Size = new System.Drawing.Size(55, 30);
+            this.btn_themPhieuNhap.TabIndex = 10;
+            this.btn_themPhieuNhap.Text = "Thêm";
+            this.btn_themPhieuNhap.UseVisualStyleBackColor = true;
+            this.btn_themPhieuNhap.Click += new System.EventHandler(this.btn_themPhieuNhap_Click);
             // 
             // groupBox3
             // 
@@ -275,11 +276,19 @@ namespace QLTPCS
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.txt_maCTPhieuNhap);
             this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Location = new System.Drawing.Point(618, 274);
+            this.groupBox3.Location = new System.Drawing.Point(618, 322);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(329, 255);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
+            // 
+            // cmb_maPhieuNhap
+            // 
+            this.cmb_maPhieuNhap.FormattingEnabled = true;
+            this.cmb_maPhieuNhap.Location = new System.Drawing.Point(107, 52);
+            this.cmb_maPhieuNhap.Name = "cmb_maPhieuNhap";
+            this.cmb_maPhieuNhap.Size = new System.Drawing.Size(151, 21);
+            this.cmb_maPhieuNhap.TabIndex = 3;
             // 
             // btn_resetCTPhieuNhap
             // 
@@ -400,7 +409,7 @@ namespace QLTPCS
             this.groupBox4.Controls.Add(this.txt_timKiemCTPhieuNhap);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.dgv_ctPhieuNhap);
-            this.groupBox4.Location = new System.Drawing.Point(12, 274);
+            this.groupBox4.Location = new System.Drawing.Point(12, 322);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(600, 255);
             this.groupBox4.TabIndex = 14;
@@ -433,19 +442,22 @@ namespace QLTPCS
             this.dgv_ctPhieuNhap.TabIndex = 0;
             this.dgv_ctPhieuNhap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ctPhieuNhap_CellClick);
             // 
-            // cmb_maPhieuNhap
+            // btn_report
             // 
-            this.cmb_maPhieuNhap.FormattingEnabled = true;
-            this.cmb_maPhieuNhap.Location = new System.Drawing.Point(107, 52);
-            this.cmb_maPhieuNhap.Name = "cmb_maPhieuNhap";
-            this.cmb_maPhieuNhap.Size = new System.Drawing.Size(151, 21);
-            this.cmb_maPhieuNhap.TabIndex = 3;
+            this.btn_report.Location = new System.Drawing.Point(850, 12);
+            this.btn_report.Name = "btn_report";
+            this.btn_report.Size = new System.Drawing.Size(91, 43);
+            this.btn_report.TabIndex = 16;
+            this.btn_report.Text = "Báo Cáo";
+            this.btn_report.UseVisualStyleBackColor = true;
+            this.btn_report.Click += new System.EventHandler(this.btn_report_Click);
             // 
             // frm_phieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 541);
+            this.ClientSize = new System.Drawing.Size(959, 594);
+            this.Controls.Add(this.btn_report);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
@@ -507,5 +519,6 @@ namespace QLTPCS
         private System.Windows.Forms.TextBox txt_timKiemCTPhieuNhap;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView dgv_ctPhieuNhap;
+        private System.Windows.Forms.Button btn_report;
     }
 }
