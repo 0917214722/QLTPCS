@@ -15,6 +15,8 @@ namespace QLTPCS.entity
         DateTime _NgayVaoLam;
         string _DiaChi;
         string _Sdt;
+        double _LuongCoBan;
+
         public NhanVien(SqlDataReader dr)
         {
             this.MaNhanVien = dr["MaNhanVien"].ToString();
@@ -24,6 +26,7 @@ namespace QLTPCS.entity
             this.NgayVaoLam = (DateTime)dr["NgayVaoLam"];
             this.DiaChi = dr["DiaChi"].ToString();
             this.Sdt = dr["Sdt"].ToString();
+            this.LuongCoBan = (double)dr["LuongCoBan"];
         }
         public string MaNhanVien { get => _MaNhanVien; set => _MaNhanVien = value; }
         public string TenNhanVien { get => _TenNhanVien; set => _TenNhanVien = value; }
@@ -32,5 +35,6 @@ namespace QLTPCS.entity
         public DateTime NgayVaoLam { get => _NgayVaoLam; set => _NgayVaoLam = value; }
         public string DiaChi { get => _DiaChi; set => _DiaChi = value; }
         public string Sdt { get => _Sdt; set => _Sdt = value; }
+        public double LuongCoBan { get => _LuongCoBan; set => _LuongCoBan = value; }
     }
 }

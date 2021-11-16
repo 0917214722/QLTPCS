@@ -29,6 +29,7 @@ namespace QLTPCS
             txt_ngayVaolam.Text = "";
             txt_diaChi.Text = "";
             txt_dienThoai.Text = "";
+            txt_luongCoBan.Text = "";
         }
         private void loadDataToTable()
         {
@@ -94,6 +95,7 @@ namespace QLTPCS
                 txt_ngayVaolam.Text = dgv_nhanVien.Rows[idx].Cells["NgayVaoLam"].Value.ToString();
                 txt_diaChi.Text = dgv_nhanVien.Rows[idx].Cells["DiaChi"].Value.ToString();
                 txt_dienThoai.Text = dgv_nhanVien.Rows[idx].Cells["Sdt"].Value.ToString();
+                txt_luongCoBan.Text = dgv_nhanVien.Rows[idx].Cells["LuongCoBan"].Value.ToString();
                 string check = dgv_nhanVien.Rows[idx].Cells["GioiTinh"].Value.ToString();
                 if (check == "Nam" || check == "nam")
                 {
@@ -121,7 +123,7 @@ namespace QLTPCS
             {
                 SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
                 conn.Open();
-                string query = "insert into NhanVien (MaNhanVien,TenNhanVien,NgaySinh,GioiTinh,NgayVaoLam,DiaChi,Sdt) values (@ma,@ten,@ngaySinh,@gioiTinh,@ngayVaoLam,@diaChi,@sdt)";
+                string query = "insert into NhanVien (MaNhanVien,TenNhanVien,NgaySinh,GioiTinh,NgayVaoLam,DiaChi,Sdt,LuongCoBan) values (@ma,@ten,@ngaySinh,@gioiTinh,@ngayVaoLam,@diaChi,@sdt,@luongCoBan)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 string gt = "";
                 if (rd_nam.Checked == true)
@@ -139,6 +141,7 @@ namespace QLTPCS
                 cmd.Parameters.Add(new SqlParameter("@ngayVaoLam", txt_ngayVaolam.Text));
                 cmd.Parameters.Add(new SqlParameter("@diaChi", txt_diaChi.Text));
                 cmd.Parameters.Add(new SqlParameter("@sdt", txt_dienThoai.Text));
+                cmd.Parameters.Add(new SqlParameter("@luongCoBan", txt_luongCoBan.Text));
                 cmd.ExecuteNonQuery();
                 conn.Close();
                 MessageBox.Show("Thêm mới thành công !!!");
@@ -158,7 +161,7 @@ namespace QLTPCS
             {
                 SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
                 conn.Open();
-                string query = "update NhanVien set TenNhanVien = @ten,NgaySinh = @ngaySinh,GioiTinh = @gioiTinh,NgayVaoLam = @ngayVaoLam,DiaChi = @diaChi,Sdt = @sdt where MaNhanVien = @ma";
+                string query = "update NhanVien set TenNhanVien = @ten,NgaySinh = @ngaySinh,GioiTinh = @gioiTinh,NgayVaoLam = @ngayVaoLam,DiaChi = @diaChi,Sdt = @sdt, LuongCoBan = @luongCoBan where MaNhanVien = @ma";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 string gt = "";
                 if (rd_nam.Checked == true)
@@ -176,6 +179,7 @@ namespace QLTPCS
                 cmd.Parameters.Add(new SqlParameter("@ngayVaoLam", txt_ngayVaolam.Text));
                 cmd.Parameters.Add(new SqlParameter("@diaChi", txt_diaChi.Text));
                 cmd.Parameters.Add(new SqlParameter("@sdt", txt_dienThoai.Text));
+                cmd.Parameters.Add(new SqlParameter("@luongCoBan", txt_luongCoBan.Text));
                 cmd.ExecuteNonQuery();
                 conn.Close();
                 MessageBox.Show("Sửa dữ liệu thành công !!!");

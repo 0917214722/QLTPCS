@@ -30,13 +30,6 @@ namespace QLTPCS
         private void InitializeComponent()
         {
             this.dgv_nhanVien = new System.Windows.Forms.DataGridView();
-            this.MaNhanvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayVaoLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_ngayVaolam = new System.Windows.Forms.TextBox();
@@ -62,6 +55,16 @@ namespace QLTPCS
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txt_timKiem = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_luongCoBan = new System.Windows.Forms.TextBox();
+            this.MaNhanvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayVaoLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LuongCoBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_nhanVien)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -81,64 +84,14 @@ namespace QLTPCS
             this.GioiTinh,
             this.NgayVaoLam,
             this.DiaChi,
-            this.Sdt});
+            this.Sdt,
+            this.LuongCoBan});
             this.dgv_nhanVien.Location = new System.Drawing.Point(0, 12);
             this.dgv_nhanVien.Name = "dgv_nhanVien";
             this.dgv_nhanVien.ReadOnly = true;
             this.dgv_nhanVien.Size = new System.Drawing.Size(804, 213);
             this.dgv_nhanVien.TabIndex = 0;
             this.dgv_nhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_nhanVien_CellClick);
-            // 
-            // MaNhanvien
-            // 
-            this.MaNhanvien.DataPropertyName = "MaNhanvien";
-            this.MaNhanvien.HeaderText = "Mã nhân viên";
-            this.MaNhanvien.Name = "MaNhanvien";
-            this.MaNhanvien.ReadOnly = true;
-            // 
-            // TenNhanVien
-            // 
-            this.TenNhanVien.DataPropertyName = "TenNhanVien";
-            this.TenNhanVien.HeaderText = "Tên nhân viên";
-            this.TenNhanVien.Name = "TenNhanVien";
-            this.TenNhanVien.ReadOnly = true;
-            this.TenNhanVien.Width = 130;
-            // 
-            // NgaySinh
-            // 
-            this.NgaySinh.DataPropertyName = "NgaySinh";
-            this.NgaySinh.HeaderText = "Ngày sinh";
-            this.NgaySinh.Name = "NgaySinh";
-            this.NgaySinh.ReadOnly = true;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.DataPropertyName = "GioiTinh";
-            this.GioiTinh.HeaderText = "Giới tính";
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.ReadOnly = true;
-            // 
-            // NgayVaoLam
-            // 
-            this.NgayVaoLam.DataPropertyName = "NgayVaoLam";
-            this.NgayVaoLam.HeaderText = "Ngày vào làm";
-            this.NgayVaoLam.Name = "NgayVaoLam";
-            this.NgayVaoLam.ReadOnly = true;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.HeaderText = "Địa chỉ";
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.ReadOnly = true;
-            this.DiaChi.Width = 130;
-            // 
-            // Sdt
-            // 
-            this.Sdt.DataPropertyName = "Sdt";
-            this.Sdt.HeaderText = "Số điện thoại";
-            this.Sdt.Name = "Sdt";
-            this.Sdt.ReadOnly = true;
             // 
             // label1
             // 
@@ -153,6 +106,8 @@ namespace QLTPCS
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.AutoSize = true;
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.txt_luongCoBan);
             this.groupBox1.Controls.Add(this.txt_ngayVaolam);
             this.groupBox1.Controls.Add(this.txt_ngaySinh);
             this.groupBox1.Controls.Add(this.rd_nu);
@@ -388,6 +343,80 @@ namespace QLTPCS
             this.label9.TabIndex = 3;
             this.label9.Text = "Tìm kiếm:";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(252, 158);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(76, 13);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Lương cơ bản:";
+            // 
+            // txt_luongCoBan
+            // 
+            this.txt_luongCoBan.Location = new System.Drawing.Point(333, 155);
+            this.txt_luongCoBan.Name = "txt_luongCoBan";
+            this.txt_luongCoBan.Size = new System.Drawing.Size(100, 20);
+            this.txt_luongCoBan.TabIndex = 23;
+            // 
+            // MaNhanvien
+            // 
+            this.MaNhanvien.DataPropertyName = "MaNhanvien";
+            this.MaNhanvien.HeaderText = "Mã nhân viên";
+            this.MaNhanvien.Name = "MaNhanvien";
+            this.MaNhanvien.ReadOnly = true;
+            // 
+            // TenNhanVien
+            // 
+            this.TenNhanVien.DataPropertyName = "TenNhanVien";
+            this.TenNhanVien.HeaderText = "Tên nhân viên";
+            this.TenNhanVien.Name = "TenNhanVien";
+            this.TenNhanVien.ReadOnly = true;
+            this.TenNhanVien.Width = 130;
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.DataPropertyName = "NgaySinh";
+            this.NgaySinh.HeaderText = "Ngày sinh";
+            this.NgaySinh.Name = "NgaySinh";
+            this.NgaySinh.ReadOnly = true;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "GioiTinh";
+            this.GioiTinh.HeaderText = "Giới tính";
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
+            // 
+            // NgayVaoLam
+            // 
+            this.NgayVaoLam.DataPropertyName = "NgayVaoLam";
+            this.NgayVaoLam.HeaderText = "Ngày vào làm";
+            this.NgayVaoLam.Name = "NgayVaoLam";
+            this.NgayVaoLam.ReadOnly = true;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
+            this.DiaChi.Width = 130;
+            // 
+            // Sdt
+            // 
+            this.Sdt.DataPropertyName = "Sdt";
+            this.Sdt.HeaderText = "Số điện thoại";
+            this.Sdt.Name = "Sdt";
+            this.Sdt.ReadOnly = true;
+            // 
+            // LuongCoBan
+            // 
+            this.LuongCoBan.DataPropertyName = "LuongCoBan";
+            this.LuongCoBan.HeaderText = "Lương cơ bản";
+            this.LuongCoBan.Name = "LuongCoBan";
+            this.LuongCoBan.ReadOnly = true;
+            // 
             // frm_nhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,5 +474,8 @@ namespace QLTPCS
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayVaoLam;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sdt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LuongCoBan;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_luongCoBan;
     }
 }
