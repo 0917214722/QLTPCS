@@ -33,7 +33,7 @@ namespace QLTPCS
             try
             {
                 List<PhieuNhap> lst = new List<PhieuNhap>();
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "select * from PhieuNhap";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -59,7 +59,7 @@ namespace QLTPCS
                 List<NhanVien> lst = new List<NhanVien>();
                 // Lấy dữ liệu Sản Phẩm từ Database về Lưu vào List
                 // Bước 1: Khởi tạo kết nối
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 // Bước 2: Mở kết nối
                 conn.Open();
                 // Bước 3: Tạo truy vấn
@@ -94,7 +94,7 @@ namespace QLTPCS
                 List<NhaPhanPhoi> lst = new List<NhaPhanPhoi>();
                 // Lấy dữ liệu Sản Phẩm từ Database về Lưu vào List
                 // Bước 1: Khởi tạo kết nối
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 // Bước 2: Mở kết nối
                 conn.Open();
                 // Bước 3: Tạo truy vấn
@@ -127,7 +127,7 @@ namespace QLTPCS
             try
             {
                 List<PhieuNhap> lst = new List<PhieuNhap>();
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "select * from PhieuNhap where MaPhieuNhap like '%'+@tk+'%'";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -173,7 +173,7 @@ namespace QLTPCS
         {
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "insert into PhieuNhap (MaPhieuNhap,MaNhanVien,MaNhaPhanPhoi,TongTien,NgayNhap) values (@ma_pn,@ma_nv,@ma_npp,@tongTien,@ngayNhap)";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -197,7 +197,7 @@ namespace QLTPCS
         {
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "update PhieuNhap set MaNhanVien = @ma_nv, MaNhaPhanPhoi = @ma_npp, TongTien = @tongTIen, NgayNhap = @ngayNhap where MaPhieuNhap = @ma_pn";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -221,7 +221,7 @@ namespace QLTPCS
         {
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "delete from PhieuNhap where MaPhieuNhap = @ma";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -264,7 +264,7 @@ namespace QLTPCS
             try
             {
                 List<ChiTietPhieuNhap> lst = new List<ChiTietPhieuNhap>();
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "select * from ChiTietPhieuNhap";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -290,7 +290,7 @@ namespace QLTPCS
                 List<PhieuNhap> lst = new List<PhieuNhap>();
                 // Lấy dữ liệu Sản Phẩm từ Database về Lưu vào List
                 // Bước 1: Khởi tạo kết nối
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 // Bước 2: Mở kết nối
                 conn.Open();
                 // Bước 3: Tạo truy vấn
@@ -325,7 +325,7 @@ namespace QLTPCS
                 List<SanPham> lst = new List<SanPham>();
                 // Lấy dữ liệu Sản Phẩm từ Database về Lưu vào List
                 // Bước 1: Khởi tạo kết nối
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 // Bước 2: Mở kết nối
                 conn.Open();
                 // Bước 3: Tạo truy vấn
@@ -358,7 +358,7 @@ namespace QLTPCS
             try
             {
                 List<ChiTietPhieuNhap> lst = new List<ChiTietPhieuNhap>();
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "select * from ChiTietPhieuNhap where MaCTPN like '%'+@tk+'%'";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -393,7 +393,7 @@ namespace QLTPCS
         {
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "insert into ChiTietPhieuNhap (MaCTPN,MaPhieuNhap,MaSanPham,SoLuong,DonGia) values (@ma_ctpn,@ma_pn,@ma_sp,@soLuong,@donGia)";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -418,7 +418,7 @@ namespace QLTPCS
         {
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "update ChiTietPhieuNhap set MaPhieuNhap = @ma_pn, MaSanPham = @ma_sp, SoLuong = @soLuong, DonGia = @donGia where MaCTPN = @ma_ctpn";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -443,7 +443,7 @@ namespace QLTPCS
         {
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "delete from ChiTietPhieuNhap where MaCTPN = @ma";
                 SqlCommand cmd = new SqlCommand(query, conn);

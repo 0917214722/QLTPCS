@@ -25,7 +25,7 @@ namespace QLTPCS
             try
             {
                 List<tkdd> lst_diemDanh = new List<tkdd>();
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "select DiemDanh.TenNhanVien, count (DiemDanh.MaNhanVien) as SoNgayDiLam, count (DiemDanh.MaNhanVien) * avg(NhanVien.LuongCoBan) as Luong from DiemDanh,NhanVien " +
                     "where MONTH(NgayDiLam) = @thang and YEAR(NgayDiLam) = @nam and DiemDanh.MaNhanVien = NhanVien.MaNhanVien " +
@@ -88,7 +88,22 @@ namespace QLTPCS
 
         private void btn_xuatExcel_Click(object sender, EventArgs e)
         {
-            exportExcel(dgv_tkdd, @"E:\", txt_tenFile.Text);
+            try 
+            {
+                if (txt_tenFile.Text != "")
+                {
+                    exportExcel(dgv_tkdd, @"D:\", txt_tenFile.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Mời nhập tên file !!!");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Mời nhập tên file !!!");
+            }
+            
         }
     }
 }

@@ -12,29 +12,40 @@ namespace QLTPCS
 {
     public partial class frm_login : Form
     {
-        public bool isLogin { get; set; }
-
         public frm_login()
         {
             InitializeComponent();
-            isLogin = false;
         }
-        private void checkLogin()
+        private bool checkLogin()
         {
             string tk = txt_tenDangNhap.Text;
             string mk = txt_matKhau.Text;
-            if (tk == "" || mk == "" )
+            if (tk == "" && mk == "" )
             {
                 MessageBox.Show("Mời nhập tên đăng nhập và mật khẩu !!!");
                 txt_tenDangNhap.Focus();
+                return false;
             }
-            
+            else if (tk == "")
+            {
+                MessageBox.Show("Mời nhập tên đăng nhập !!!");
+                txt_tenDangNhap.Focus();
+                return false;
+            }
+            else if (mk == "")
+            {
+                MessageBox.Show("Mời nhập mật khẩu !!!");
+                txt_tenDangNhap.Focus();
+                return false;
+            }
+            return true;
         }
         private void btn_dangNhap_Click(object sender, EventArgs e)
         {
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 string tk = txt_tenDangNhap.Text;
                 string mk = txt_matKhau.Text;
                 conn.Open();
@@ -47,7 +58,10 @@ namespace QLTPCS
                 if (sl == 1)
                 {
                     MessageBox.Show("Đăng nhập thành công !!!");
-                    isLogin = true;
+                    /*Application.Run(new frm_main());*/
+                    frm_main frm = new frm_main();
+                    this.Hide();
+                    frm.ShowDialog();
                     this.Close();
                 }
                 else

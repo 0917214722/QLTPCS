@@ -63,10 +63,10 @@ namespace QLTPCS
             // 
             // rpv_phieuNhap
             // 
-            this.rpv_phieuNhap.Location = new System.Drawing.Point(12, 140);
+            this.rpv_phieuNhap.Location = new System.Drawing.Point(12, 89);
             this.rpv_phieuNhap.Name = "rpv_phieuNhap";
             this.rpv_phieuNhap.ServerReport.BearerToken = null;
-            this.rpv_phieuNhap.Size = new System.Drawing.Size(776, 298);
+            this.rpv_phieuNhap.Size = new System.Drawing.Size(776, 349);
             this.rpv_phieuNhap.TabIndex = 3;
             // 
             // frm_reportPhieuNhap

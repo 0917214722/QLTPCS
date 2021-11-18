@@ -24,7 +24,7 @@ namespace QLTPCS
 
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "select * from NhanVien";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -49,7 +49,7 @@ namespace QLTPCS
         {
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                 conn.Open();
                 string query = "select count (*) from DiemDanh where MaNhanVien = @manv and NgayDiLam = FORMAT(GETDATE(),'yyyy-MM-dd')";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -78,7 +78,7 @@ namespace QLTPCS
             {
                 try
                 {
-                    SqlConnection conn = new SqlConnection("Data Source=NAM_KHANG\\SQLEXPRESS;Initial Catalog=QLTPCS;User ID=sa;Password = sa123");
+                    SqlConnection conn = new SqlConnection("Data Source=DESKTOP-LJGMEJH;Initial Catalog=QLTPCS;User ID=sa;Password = 123456");
                     conn.Open();
                     string query = "insert into DiemDanh (MaNhanVien,TenNhanVien,NgayDiLam) values (@ma,@ten,GETDATE())";
                     SqlCommand cmd = new SqlCommand(query, conn);
